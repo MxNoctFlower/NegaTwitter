@@ -32,4 +32,12 @@
         android:layout_alignBottom="@id/ivProfileImage"
         android:layout_below="@id/tvUserName"
         android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvBody"
+        android:layout_below="@+id/ivProfileImage"
+        android:text="TextView" />
 </RelativeLayout>
