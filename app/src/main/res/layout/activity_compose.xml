@@ -8,25 +8,38 @@
 
     <Button
         android:id="@+id/btnTweet"
-        android:layout_width="match_parent"
+        android:layout_width="115dp"
         android:layout_height="46dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="0dp"
-        android:text="Tweet"
         android:onClick="postTweet"
+        android:text="Tweet"
         tools:layout_editor_absoluteX="12dp"
         tools:layout_editor_absoluteY="464dp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bttnTweet"
+        android:layout_height="59dp"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="-1dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="403dp"
         android:ems="10"
         android:inputType="textMultiLine"
+        android:maxLength="140"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="408dp" />
+        tools:layout_editor_absoluteY="500dp" />
+
+    <com.wafflecopter.charcounttextview.CharCountTextView
+        android:id="@+id/tvCount"
+        android:layout_width="46dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-403dp"
+        app:exceededTextColor="#FF0000"
+        app:maxCharacters="140" />
+
+
 </RelativeLayout>

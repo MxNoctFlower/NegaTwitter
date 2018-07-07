@@ -24,7 +24,4 @@ public class User {
         return user;
 
     }
-
-    public User() {
-    }
 }
